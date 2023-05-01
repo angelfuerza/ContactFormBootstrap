@@ -1,0 +1,25 @@
+/*Estilos para el formulario*/
+
+/*Modificación de los estilos de Bootstrap con un colo de nuestra elección*/
+
+/*Editamos los colores del boton de Enviar*/
+.btn-primary {
+    background-color: #fdb065 !important;
+    border-color: #fdb065 !important;
+}
+
+/*Editamos los colores del boton de Enviar en Hover y Active*/
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited, .btn-primary:focus {
+    background-color: #fa9f43 !important;
+    border-color: #fa9f43 !important;
+}
+
+
+/*Editamos el color del input focus de bootstrap*/
+.form-control:focus {
+    border-color: gray;
+    box-shadow: 0 0 0 0.2rem rgba(122, 122, 122, 0.25);
+} 
+
