@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.scss">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--Formulario DOCS BOOTSTRAP, SOLO ORIENTATIVO EL BUENO ES EL INDEX-->
+
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Tu nombre: <input type="text" name="name"  /></label>
+        </p>
+        <p>
+          <label>Tu email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Busco: <select name="role[]" multiple>
+            <option value="Asesoría">Asesoría</option>
+            <option value="Diseño/Desarrollo">Diseño/Desarrollo</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Mensaje: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+      </form>
+
+      <!--Fin del formulario-->
+
+</body>
+</html>

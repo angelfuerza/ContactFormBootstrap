@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +11,56 @@
 </head>
 
 <body>
+  <!-- Signup-->
+  <section id="signup">
+    <!--AQUI VA EL FORMULARIO DE CONTACTO-->
+    <h2 class="h2Contacto mb-4">CONTACTO</h2>
+    <!--FORMULARIO ESTILIZADO-->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/exito.html">
 
-  <!--FORMULARIO ESTILIZADO-->
-  <form>
-
-    <div class="containerFormulario m-4 p-2 ">
-
-      <div class="mb-2">
+      <div class="containerFormulario m-4 p-2 ">
 
         <div class="mb-2">
-          <input type="text" class="form-control" aria-label="tu nombre" placeholder="Nombre">
+
+          <select name="role[]" multiple class="form-select" aria-label="Default select example">
+            <option selected>Busco:</option>
+            <option value="1">Desarrollo Web/Diseño</option>
+            <option value="2">Asesoría</option>
+            <option value="3">Otros</option>
+          </select>
+
         </div>
 
         <div class="mb-2">
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+          <input type="text" name="fullname" class="form-control" aria-label="tu nombre" placeholder="Nombre">
         </div>
 
         <div class="mb-2">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+          <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
         </div>
+
+        <div class="mb-2">
+          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Mensaje"></textarea>
+        </div>
+
+
+        <div data-netlify-recaptcha="true"></div>
+
 
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" type="button">ENVIAR</button>
+          <button class="btn btn-primary" type="submit">ENVIAR</button>
         </div>
 
       </div>
 
-    </div>
+      </div>
 
-  </form>
-  <!--FIN DEL FORMULARIO ESTILIZADO-->
+    </form>
+    <!--FIN DEL FORMULARIO ESTILIZADO-->
+
+  </section>
+  <!-- Contact-->
 
 
 
